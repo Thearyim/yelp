@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Business } from '../models/task.model';
 
 @Component({
   selector: 'app-business-list',
@@ -12,6 +13,6 @@ export class BusinessListComponent {
     new Business('Melrose')
   ];
 
-  
+
 
 }

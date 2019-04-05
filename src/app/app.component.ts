@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Holler } from
+import { Business } from
 
 @Component({
   selector: 'app-root',
@@ -9,4 +9,19 @@ import { Holler } from
 
 export class AppComponent {
   title = 'Holler';
-}
+
+  currentFocus: string = 'Holler';
+    currentTime = new Date();
+    month: number = this.currentTime.getMonth() + 1;
+    day: number = this.currentTime.getDate();
+    year: number = this.currentTime.getFullYear();
+    selectedBusiness = null;
+
+    editBusiness(clickedBusiness) {
+      this.selectedBusiness = clickedBusiness;
+    }
+
+    finishedEditing() {
+      this.selectedBusiness = null;
+    }
+  }
