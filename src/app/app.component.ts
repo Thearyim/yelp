@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Holler }
+import { Holler } from
 
 @Component({
   selector: 'app-root',
