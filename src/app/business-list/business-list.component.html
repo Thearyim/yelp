@@ -1,3 +1,3 @@
-<p>
-  business-list works!
-</p>
+<ul>
+  <li *ngFor="let currentBusiness of businesses">{{currentBusiness.description}} <button (click)="editBusiness(currentBusiness)">Edit!</button></li>
+</ul>

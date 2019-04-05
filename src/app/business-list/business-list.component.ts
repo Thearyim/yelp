@@ -5,11 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './business-list.component.html',
   styleUrls: ['./business-list.component.css']
 })
-export class BusinessListComponent implements OnInit {
+export class BusinessListComponent {
+  businesses: Business[] = [
+    new Business('Melrose'),
+    new Business('Melrose'),
+    new Business('Melrose')
+  ];
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  
 
 }
