@@ -9,19 +9,17 @@ import { Business } from
 
 export class AppComponent {
   title = 'Holler';
+  currentTime = new Date();
+  month: number = this.currentTime.getMonth() + 1;
+  day: number = this.currentTime.getDate();
+  year: number = this.currentTime.getFullYear();
+  selectedBusiness = null;
 
-  currentFocus: string = 'Holler';
-    currentTime = new Date();
-    month: number = this.currentTime.getMonth() + 1;
-    day: number = this.currentTime.getDate();
-    year: number = this.currentTime.getFullYear();
-    selectedBusiness = null;
-
-    editBusiness(clickedBusiness) {
-      this.selectedBusiness = clickedBusiness;
-    }
-
-    finishedEditing() {
-      this.selectedBusiness = null;
-    }
+  editBusiness(clickedBusiness) {
+    this.selectedBusiness = clickedBusiness;
   }
+
+  finishedEditing() {
+    this.selectedBusiness = null;
+  }
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Business } from '../models/task.model';
 
 @Component({
@@ -7,6 +7,7 @@ import { Business } from '../models/task.model';
   styleUrls: ['./business-list.component.css']
 })
 export class BusinessListComponent {
+  @Input() childBusinessList: Business[];
   businesses: Business[] = [
     new Business('Melrose'),
     new Business('Melrose'),
