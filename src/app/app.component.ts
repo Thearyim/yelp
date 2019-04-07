@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Business } from
+// import { Business } from
 
 @Component({
   selector: 'app-root',
@@ -15,11 +15,11 @@ export class AppComponent {
   year: number = this.currentTime.getFullYear();
   selectedBusiness = null;
 
-  editBusiness(clickedBusiness) {
-    this.selectedBusiness = clickedBusiness;
-  }
+  // editBusiness(clickedBusiness) {
+  //   this.selectedBusiness = clickedBusiness;
+  // }
 
-  finishedEditing() {
-    this.selectedBusiness = null;
-  }
+  // finishedEditing() {
+  //   this.selectedBusiness = null;
+  // }
 }
