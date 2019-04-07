@@ -28,4 +28,8 @@ export class AppComponent {
   // finishedEditing() {
   //   this.selectedBusiness = null;
   // }
+
+  // addBusiness(newBusiness: Business) {
+  //   this.masterBusinessList.push(newBusiness);
+  // }
 }
